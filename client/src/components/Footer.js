@@ -16,12 +16,23 @@ export default function Footer() {
   return (
     <footer className={classes.footer}>
       <Typography variant="body2" color="textSecondary" align="center">
-        {'Copyright © '}
-        <Link color="inherit" href="https://github.com/ielijose/galaxy-weather">
+        {'Made with ❤ by '}
+        <Link
+          color="inherit"
+          target="_blank"
+          href="http://bit.ly/linkedin-ielijose"
+        >
           Eli José Carrasquero
-        </Link>{' '}
-        {new Date().getFullYear()}
-        {'.'}
+        </Link>
+      </Typography>
+      <Typography color="textSecondary" align="center">
+        <Link
+          color="inherit"
+          target="_blank"
+          href="http://bit.ly/galaxy-weather-gh"
+        >
+          <strong>Fork me on GitHub</strong>
+        </Link>
       </Typography>
     </footer>
   );
